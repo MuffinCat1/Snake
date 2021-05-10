@@ -207,7 +207,7 @@ int main() {
 		Sleep(10);
 	}
 	
-	//create a text file that stores the time you played the date in your computer and the time in your computer
+	//create a text file that stores the time you played, the date in your computer, the time in your computer and your score from the last game 
 	scoreLog.open("score.txt", ios::out | ios::app);
 	scoreLog << "[" << "Date: " << 0 << local_time->tm_mday << "/" << 0 << 1 + local_time->tm_mon << "/" << 1900 + local_time->tm_year << "  Time: " <<  1 + local_time->tm_hour << ":" << 1 + local_time->tm_min << "  Timer: " << 1 + local_time->tm_sec << " sec in game" << "] " << score << " points" << endl;
 	scoreLog.close();
